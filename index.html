@@ -21,20 +21,12 @@
         </div>
     </div>
 
-    <script src="push-worker.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script>
-        $("#regButton").click(() => {
-            UA.then(sdk => {
-                sdk.register();
-            });
-        });
-    </script>
     <script type="text/javascript">
         // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1532034407.0
         !function (n, t, c, e, u) {
@@ -51,6 +43,13 @@
                 vapidPublicKey: 'BLbGUlCertRZFg_ssufWt_7EEyNh0ua_3TeTjkGdZmb25qHeSQu4f-BXpSLC2NwGqhELWw14G6axE98412ZclJo='
             });
 
+    </script>
+    <script>
+        $("#regButton").click(() => {
+            UA.then(function (sdk) {
+                sdk.register(); // Returns Channel object
+            });
+        });
     </script>
 </body>
 
