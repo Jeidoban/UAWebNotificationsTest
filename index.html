@@ -7,6 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <script type="text/javascript">
+        // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1532034407.0
+        !function (n, t, c, e, u) {
+            function r(n) { try { f = n(u) } catch (n) { return h = n, void i(p, n) } i(s, f) } function i(n, t) {
+                for (var c = 0; c < n.length; c++)d(n[c], t);
+            } function o(n, t) { return n && (f ? d(n, f) : s.push(n)), t && (h ? d(t, h) : p.push(t)), l } function a(n) { return o(!1, n) } function d(t, c) {
+                n.setTimeout(function () { t(c) }, 0)
+            } var f, h, s = [], p = [], l = { then: o, catch: a, _setup: r }; n[e] = l; var v = t.createElement("script");
+            v.src = c, v.async = !0, v.id = "_uasdk", v.rel = e, t.head.appendChild(v)
+        }(window, document, 'https://web-sdk.urbanairship.com/notify/v1/ua-sdk.min.js',
+            'UA', {
+                appKey: '92tyYWuXSf6eCc8Urs4FqA',
+                token: 'MTo5MnR5WVd1WFNmNmVDYzhVcnM0RnFBOkRxYkFuaGc5MHpKVUZGU2tPUTljRUt3UzlPa1EzSGpEXzR4OUZqQlFsQkk',
+                vapidPublicKey: 'BLbGUlCertRZFg_ssufWt_7EEyNh0ua_3TeTjkGdZmb25qHeSQu4f-BXpSLC2NwGqhELWw14G6axE98412ZclJo='
+            });
+
+    </script>
     <title>UA Notification Test</title>
 </head>
 
@@ -27,23 +44,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1532034407.0
-        !function (n, t, c, e, u) {
-            function r(n) { try { f = n(u) } catch (n) { return h = n, void i(p, n) } i(s, f) } function i(n, t) {
-                for (var c = 0; c < n.length; c++)d(n[c], t);
-            } function o(n, t) { return n && (f ? d(n, f) : s.push(n)), t && (h ? d(t, h) : p.push(t)), l } function a(n) { return o(!1, n) } function d(t, c) {
-                n.setTimeout(function () { t(c) }, 0)
-            } var f, h, s = [], p = [], l = { then: o, catch: a, _setup: r }; n[e] = l; var v = t.createElement("script");
-            v.src = c, v.async = !0, v.id = "_uasdk", v.rel = e, t.head.appendChild(v)
-        }(window, document, 'https://web-sdk.urbanairship.com/notify/v1/ua-sdk.min.js',
-            'UA', {
-                appKey: '92tyYWuXSf6eCc8Urs4FqA',
-                token: 'MTo5MnR5WVd1WFNmNmVDYzhVcnM0RnFBOkRxYkFuaGc5MHpKVUZGU2tPUTljRUt3UzlPa1EzSGpEXzR4OUZqQlFsQkk',
-                vapidPublicKey: 'BLbGUlCertRZFg_ssufWt_7EEyNh0ua_3TeTjkGdZmb25qHeSQu4f-BXpSLC2NwGqhELWw14G6axE98412ZclJo='
-            });
 
-    </script>
     <script>
         $("#regButton").click(() => {
             UA.then(function (sdk) {
